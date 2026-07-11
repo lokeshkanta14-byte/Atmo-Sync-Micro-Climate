@@ -2,9 +2,7 @@
 
 
 
-\## Completed Activities
-
-
+\## Completed Tasks
 
 \- Created Snowflake account
 
@@ -14,15 +12,13 @@
 
 \- Created schema
 
-\- Verified SQL connection
+\- Verified connection
 
-\- Created GitHub branch
+\- Granted Snowflake access to team members
 
-\- Set up local Git repository
-
-\- Successfully pushed all Week 1 commits
+\- Created GitHub branch: Ibad\_Snowflake\_creation.
 
 
 
-Status: Week 1 completed successfully.
+Status: Week 1 completed.
 
