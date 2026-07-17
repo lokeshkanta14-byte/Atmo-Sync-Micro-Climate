@@ -3,7 +3,7 @@
 ## IoT Based Micro Climate Monitoring Project
 
 ### Team
--python and kafka : Lokesh kanta
+
 - Snowflake: Mohammed Ibad
 - dbt: Middealogy
 - Superset: Shifla
