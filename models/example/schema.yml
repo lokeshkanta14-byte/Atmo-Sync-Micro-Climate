@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: stg_raw_iot_data
+    description: "Staging model for cleaned IoT shipment data"
+
+    columns:
+      - name: Record_ID
+        tests:
+          - unique
+          - not_null
+
+      - name: Shipment_ID
+        tests:
+          - not_null
+
+      - name: Product_Name
+        tests:
+          - not_null
+
+  - name: cleaned_iot_data
+    description: "Analytics ready IoT shipment data"
+
+    columns:
+      - name: Record_ID
+        tests:
+          - unique
+          - not_null
