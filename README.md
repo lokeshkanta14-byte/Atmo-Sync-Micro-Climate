@@ -6,7 +6,7 @@
 - Python: Kanta Lokeswararao
 - Snowflake: Mohammed Ibad
 - dbt: Alogy
-- Superset: Shifa
+- Superset: Shifla
 
 ## Week 1 Progress
 - Completed project setup.
