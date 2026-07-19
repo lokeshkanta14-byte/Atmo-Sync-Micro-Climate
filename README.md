@@ -2,6 +2,10 @@
 
 ## Team Member
 **Name:** Fathima Shifla P
+**Name:** Lokesh Kanta
+**Name:** Middeology
+**Name:** V.Mohammed Ibad
+
 
 ## Role
 Apache Superset Dashboard Development
