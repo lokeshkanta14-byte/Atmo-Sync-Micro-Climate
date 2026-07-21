@@ -15,7 +15,7 @@
 - Configured data sharing process.
 - Reviewed raw IoT data.
 - Verified GitHub repository structure and commits.
-## Week 2 Progress
+## Week 2 Completed
 - Loaded the IoT dataset using Python.
 - Performed data cleaning and preprocessing.
 - Identified and handled missing (NULL) values.
