@@ -110,4 +110,5 @@ Apache Superset Dashboard
 - Prepared the dashboard for Week 3 enhancements.
 
 ## Status
-✅ Week 2 completed successfully
+Week 2 completed successfully
+
