@@ -28,7 +28,6 @@ Set up the Apache Superset environment and establish connectivity with the Snowf
 - Apache Superset
 - Docker Desktop
 - Snowflake
-- SQL
 - Git
 - GitHub
 
@@ -112,6 +111,6 @@ Apache Superset Dashboard
 
 ## Repository Status
 
-- ✅ Week 1 – Environment Setup Completed
-- ✅ Week 2 – Dashboard Development Completed
-- 🚀 Ready to continue with Week 3 Advanced Analytics Dashboard.
+- Week 1 – Environment Setup Completed
+- Week 2 – Dashboard Development Completed
+- Ready to continue with Week 3 Advanced Analytics Dashboard.
