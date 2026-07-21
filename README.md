@@ -1,4 +1,4 @@
-# 📊 Apache Superset Dashboard Development
+#  Apache Superset Dashboard Development
 
 ## Team Member
 **Name:** Fathima Shifla P
@@ -11,7 +11,7 @@ Apache Superset Dashboard Developer
 
 ---
 
-# 📅 Week 1 – Environment Setup
+#  Week 1 – Environment Setup
 
 ## Objective
 Set up the Apache Superset environment and establish connectivity with the Snowflake database for dashboard development.
@@ -50,20 +50,20 @@ Set up the Apache Superset environment and establish connectivity with the Snowf
 - Dataset imported successfully.
 - Environment prepared for dashboard development.
 
-**Status:** ✅ Week 1 completed successfully.
+**Status:**  Week 1 completed successfully.
 
 ---
 
-# 📅 Week 2 – Dashboard Development
+#  Week 2 – Dashboard Development
 
 ## Objective
 Develop an interactive Cold Chain Monitoring Dashboard using Apache Superset for real-time IoT shipment monitoring.
 
 ### Dashboard KPIs
-- 🌡️ Average Temperature
-- 💧 Average Humidity
-- 📦 Containers Online
-- ⚠️ Average Spoilage Risk
+-  Average Temperature
+-  Average Humidity
+-  Containers Online
+-  Average Spoilage Risk
 
 ### Dashboard Visualizations
 - Temperature Trend
@@ -106,7 +106,7 @@ Apache Superset Dashboard
 - Validated dashboard metrics and insights.
 - Prepared the dashboard for Week 3 enhancements.
 
-**Status:** ✅ Week 2 completed successfully.
+**Status:**  Week 2 completed successfully.
 
 ---
 
