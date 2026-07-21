@@ -24,3 +24,18 @@
 - Reviewed Snowflake account configuration and data availability.
 - Coordinated with team members to ensure smooth collaboration.
 - Supported project integration and progress tracking as Team Lead.
+- ## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- SQL
+- Jupyter Notebook
+- CSV
+- Git
+- GitHub
+- ## Current Status
+
+- ✅ Week 1 Completed
+- ✅ Week 2 Completed
+- 🔄 Week 3 In Progress
