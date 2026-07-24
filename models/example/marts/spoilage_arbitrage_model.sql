@@ -1,41 +1,31 @@
 {{ config(materialized='table') }}
 
 select
-    Record_ID,
-    Timestamp,
-    Container_ID,
-    Shipment_ID,
-    Product_Name,
-    Origin_City,
-    Destination_City,
-
-    Temperature,
-    Humidity_percentage,
-    Vibration_Level,
-    Spoilage_Risk,
-    Quality_Score,
-
-    Distance_to_Market,
-    Time_to_Spoilage_Hours,
-    Estimated_Revenue,
-    Estimated_Loss,
-    Arbitrage_Profit,
+    RECORD_ID,
+    TIMESTAMP,
+    CONTAINER_ID,
+    SHIPMENT_ID,
+    PRODUCT_NAME,
+    ORIGIN_CITY,
+    DESTINATION_CITY,
+    TEMPERATURE_C,
+    "Humidity_%" as HUMIDITY_PERCENT,
+    VIBRATION_LEVEL,
+    MARKET_PRICE_PER_KG,
+    "Spoilage_Risk_%" as SPOILAGE_RISK,
+    TIME_TO_SPOILAGE_HOURS,
+    DISTANCE_TO_MARKET,
 
     case
-        when Spoilage_Risk >= 70 then 'High'
-        when Spoilage_Risk >= 40 then 'Medium'
+        when "Spoilage_Risk_%" >= 70 then 'High'
+        when "Spoilage_Risk_%" >= 40 then 'Medium'
         else 'Low'
-    end as Risk_Category,
+    end as RISK_LEVEL,
 
     case
-        when Arbitrage_Profit > 0 then 'Profitable'
-        else 'Not Profitable'
-    end as Profit_Status,
-
-    case
-        when Time_to_Spoilage_Hours <= 24 then 'Immediate Sale'
-        when Time_to_Spoilage_Hours <= 72 then 'Priority Transport'
+        when TIME_TO_SPOILAGE_HOURS <= 24 then 'Immediate Sale'
+        when TIME_TO_SPOILAGE_HOURS <= 72 then 'Priority Transport'
         else 'Normal Transport'
-    end as Recommended_Action
+    end as RECOMMENDED_ACTION
 
 from IOT_PROJECT.PUBLIC.ANALYTICS_IOT_DATA
