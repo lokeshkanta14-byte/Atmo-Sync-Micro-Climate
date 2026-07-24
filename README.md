@@ -29,3 +29,24 @@ IoT Based Micro Climate Monitoring Project
 - Generated dbt documentation.
 - Committed and pushed my dbt work to GitHub.
 - Reported the Snowflake permission issue for table creation.
+
+
+## Week 3 Progress (Spoilage Arbitrage Model)
+
+### Responsibilities
+- Created the Spoilage Arbitrage dbt model.
+- Built business logic for shipment analysis.
+- Calculated Arbitrage Profit using Estimated Revenue and Estimated Loss.
+- Categorized shipments into High, Medium, and Low Risk.
+- Added Profit Status for profitable and non-profitable shipments.
+- Created Transport Priority recommendations based on Time to Spoilage.
+- Added Arbitrage Opportunity categories.
+- Verified the dbt model using `dbt debug` and `dbt compile`.
+- Collaborated with the team to execute the model in Snowflake due to permission limitations.
+
+### Deliverables
+- ✅ Spoilage Arbitrage dbt model (`spoilage_arbitrage_model.sql`)
+- ✅ Business calculations for reporting
+- ✅ Risk categorization
+- ✅ Transport priority logic
+- ✅ Arbitrage opportunity logic

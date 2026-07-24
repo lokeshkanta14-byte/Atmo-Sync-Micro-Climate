@@ -70,5 +70,58 @@ SELECT
 
         ELSE 'Low Arbitrage Opportunity'
     END AS ARBITRAGE_OPPORTUNITY
+    Record_ID,
+    Timestamp,
+    Container_ID,
+    Shipment_ID,
+    Product_Name,
+    Origin_City,
+    Destination_City,
+
+    Temperature,
+    Humidity_percentage,
+    Vibration_Level,
+    Spoilage_Risk,
+    Quality_Score,
+
+    COALESCE(Distance_to_Market, 100) AS Distance_to_Market,
+    COALESCE(Time_to_Spoilage_Hours, 48) AS Time_to_Spoilage_Hours,
+
+    Estimated_Revenue,
+    Estimated_Loss,
+
+    (Estimated_Revenue - Estimated_Loss) AS Arbitrage_Profit,
+
+    CASE
+        WHEN Spoilage_Risk >= 70 THEN 'High'
+        WHEN Spoilage_Risk >= 40 THEN 'Medium'
+        ELSE 'Low'
+    END AS Risk_Category,
+
+    CASE
+        WHEN (Estimated_Revenue - Estimated_Loss) > 0
+            THEN 'Profitable'
+        ELSE 'Not Profitable'
+    END AS Profit_Status,
+
+    CASE
+        WHEN COALESCE(Time_to_Spoilage_Hours,48) <= 24
+            THEN 'Immediate Sale'
+        WHEN COALESCE(Time_to_Spoilage_Hours,48) <= 72
+            THEN 'Priority Transport'
+        ELSE 'Normal Transport'
+    END AS Transport_Priority,
+
+    CASE
+        WHEN COALESCE(Time_to_Spoilage_Hours,48) <= 24
+             AND COALESCE(Distance_to_Market,100) > 200
+            THEN 'High Arbitrage Opportunity'
+
+        WHEN COALESCE(Time_to_Spoilage_Hours,48) <= 72
+             AND COALESCE(Distance_to_Market,100) <= 200
+            THEN 'Medium Arbitrage Opportunity'
+
+        ELSE 'Low Arbitrage Opportunity'
+    END AS Arbitrage_Opportunity
 
 FROM {{ ref('cleaned_iot_data') }}
