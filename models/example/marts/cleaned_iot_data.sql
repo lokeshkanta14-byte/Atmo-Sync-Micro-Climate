@@ -1,11 +1,14 @@
 {{ config(materialized='table') }}
 
-select
+SELECT
     *,
-    case
-        when Spoilage_Risk >= 70 then 'HIGH'
-        when Spoilage_Risk >= 40 then 'MEDIUM'
-        else 'LOW'
-    end as Risk_Category
-from {{ ref('stg_raw_iot_data') }}
-where Record_ID is not null
+
+    CASE
+        WHEN SPOILAGE_RISK >= 70 THEN 'HIGH'
+        WHEN SPOILAGE_RISK >= 40 THEN 'MEDIUM'
+        ELSE 'LOW'
+    END AS RISK_CATEGORY
+
+FROM {{ ref('stg_raw_iot_data') }}
+
+WHERE RECORD_ID IS NOT NULL

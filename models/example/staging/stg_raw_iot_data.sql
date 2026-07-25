@@ -1,6 +1,6 @@
 {{ config(materialized='table') }}
 
-select
+SELECT
     RECORD_ID,
     TIMESTAMP,
     CONTAINER_ID,
@@ -9,23 +9,23 @@ select
     ORIGIN_CITY,
     DESTINATION_CITY,
     TEMPERATURE_C,
-    "Humidity_%" as HUMIDITY_PERCENT,
+    "Humidity_%" AS HUMIDITY_PERCENT,
     VIBRATION_LEVEL,
     MARKET_PRICE_PER_KG,
-    "Spoilage_Risk_%" as SPOILAGE_RISK,
+    "Spoilage_Risk_%" AS SPOILAGE_RISK,
     TIME_TO_SPOILAGE_HOURS,
     DISTANCE_TO_MARKET,
 
-    case
-        when "Spoilage_Risk_%" >= 70 then 'High'
-        when "Spoilage_Risk_%" >= 40 then 'Medium'
-        else 'Low'
-    end as RISK_LEVEL,
+    CASE
+        WHEN "Spoilage_Risk_%" >= 70 THEN 'High'
+        WHEN "Spoilage_Risk_%" >= 40 THEN 'Medium'
+        ELSE 'Low'
+    END AS RISK_LEVEL,
 
-    case
-        when TIME_TO_SPOILAGE_HOURS <= 24 then 'Immediate Sale'
-        when TIME_TO_SPOILAGE_HOURS <= 72 then 'Priority Transport'
-        else 'Normal Transport'
-    end as RECOMMENDED_ACTION
+    CASE
+        WHEN TIME_TO_SPOILAGE_HOURS <= 24 THEN 'Immediate Sale'
+        WHEN TIME_TO_SPOILAGE_HOURS <= 72 THEN 'Priority Transport'
+        ELSE 'Normal Transport'
+    END AS RECOMMENDED_ACTION
 
-from IOT_PROJECT.PUBLIC.ANALYTICS_IOT_DATA
+FROM IOT_PROJECT.PUBLIC.ANALYTICS_IOT_DATA
