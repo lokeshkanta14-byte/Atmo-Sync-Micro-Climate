@@ -38,12 +38,14 @@ As the Snowflake Engineer, my responsibilities include:
 
 # Week 1 Completed
 
+## Snowflake Setup
+
 - Configured Snowflake account
-- Created warehouse
+- Created compute warehouse
 - Created database and schema
 - Loaded raw IoT dataset
-- Verified data loading
-- Shared Snowflake environment with team
+- Verified successful data loading
+- Shared Snowflake environment with the team
 
 ---
 
@@ -55,21 +57,52 @@ As the Snowflake Engineer, my responsibilities include:
 - Created cleaned dataset (`cleaned_iot_data`)
 - Removed duplicate records
 - Handled missing values using SQL
-- Created Spoilage Risk Category
+- Generated Spoilage Risk Category
 
 ## Data Validation
 
 - Verified total row count
 - Checked duplicate records
-- Checked NULL values
-- Verified data quality
-- Confirmed cleaned dataset is analytics-ready
+- Validated NULL values
+- Confirmed data quality
+- Prepared analytics-ready dataset
 
 ## Team Support
 
-- Granted required Snowflake permissions
+- Granted Snowflake permissions
 - Supported dbt integration
 - Prepared dataset for Apache Superset dashboard
+
+---
+
+# Week 3 Completed
+
+## Advanced Analytics
+
+- Created analytics-ready datasets
+- Prepared Snowflake analytics layer
+- Created `CLEANED_RAW_IOT_DATA`
+- Removed duplicate records from raw dataset
+- Handled missing values using SQL and dbt
+- Validated 30,000 clean records
+- Generated Risk Category for monitoring
+- Prepared dataset for Spoilage Analytics
+
+## Dashboard Support
+
+- Shared cleaned dataset with Apache Superset
+- Granted access to Shifla for dashboard development
+- Granted access to Lokesh for project collaboration
+- Verified dashboard connectivity
+- Supported final dashboard integration
+
+## Documentation
+
+- Updated Week 3 documentation
+- Prepared analytics documentation
+- Updated project README
+- Documented Snowflake implementation
+- Maintained GitHub repository
 
 ---
 
@@ -88,10 +121,16 @@ As the Snowflake Engineer, my responsibilities include:
 
 ```
 models/
- ├── staging/
- ├── marts/
-
+├── staging/
+│   └── stg_raw_iot_data.sql
+│
+├── marts/
+│   ├── cleaned_iot_data.sql
+│   ├── spoilage_arbitrage_model.sql
+│   └── 05_week2_user_access.sql
+│
 seeds/
+├── raw_iot_dataset.csv
 
 README.md
 ```
@@ -102,7 +141,8 @@ README.md
 
 - Week 1 ✅ Completed
 - Week 2 ✅ Completed
-- Week 3 🔄 In Progress
+- Week 3 ✅ Completed
+- Week 4 🔄 In Progress
 
 ---
 
