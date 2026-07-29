@@ -25,13 +25,7 @@
 - Coordinated with team members to ensure smooth collaboration.
 - Supported project integration and progress tracking as Team Lead.
 - Supported project integration and progress tracking as Team Lead.
-- ### Documentation
-
-- Updated Week 3 progress documentation.
-- Documented dashboard development and visualization improvements.
-- Recorded dataset updates and data cleaning activities.
-- Updated the project README with Week 3 progress.
-- Maintained the GitHub repository with the latest changes.
+- 
 
 ## Week 3 Completed
 
@@ -49,6 +43,13 @@
 - Suggested dashboard enhancements and design improvements to Shifla.
 - Reviewed dashboard updates and provided constructive feedback.
 - Validated dashboard outputs before sharing with the team
+- ### Documentation
+
+- Updated Week 3 progress documentation.
+- Documented dashboard development and visualization improvements.
+- Recorded dataset updates and data cleaning activities.
+- Updated the project README with Week 3 progress.
+- Maintained the GitHub repository with the latest changes.
 - ## Technologies Used
 
 - Python
