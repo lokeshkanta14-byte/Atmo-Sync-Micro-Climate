@@ -24,13 +24,17 @@
 - Reviewed Snowflake account configuration and data availability.
 - Coordinated with team members to ensure smooth collaboration.
 - Supported project integration and progress tracking as Team Lead.
--### **Week 3 Completed**
-Dashboard Development
-Collaborated with team members to discuss dashboard requirements.
-Designed and developed an interactive Power BI dashboard.
-Shared the dashboard with the team for review and feedback.
-Compared my dashboard with the team dashboard and implemented improvements.
-Enhanced KPIs, charts, filters, and overall dashboard usability.
+- Supported project integration and progress tracking as Team Lead.
+
+## Week 3 Completed
+
+### Dashboard Development
+
+- Collaborated with team members to discuss dashboard requirements.
+- Designed and developed an interactive Power BI dashboard.
+- Shared the dashboard with the team for review and feedback.
+- Compared my dashboard with the team dashboard and implemented improvements.
+- Enhanced KPIs, charts, filters, and overall dashboard usability.
 - ## Technologies Used
 
 - Python
