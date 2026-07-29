@@ -35,6 +35,13 @@
 - Shared the dashboard with the team for review and feedback.
 - Compared my dashboard with the team dashboard and implemented improvements.
 - Enhanced KPIs, charts, filters, and overall dashboard usability.
+- ### Team Collaboration
+
+- Worked with team members throughout dashboard development.
+- Discussed visualization improvements and business requirements.
+- Suggested dashboard enhancements and design improvements to Shifla.
+- Reviewed dashboard updates and provided constructive feedback.
+- Validated dashboard outputs before sharing with the team
 - ## Technologies Used
 
 - Python
