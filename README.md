@@ -63,7 +63,8 @@
 
 - ✅ Week 1 Completed
 - ✅ Week 2 Completed
-- 🔄 Week 3 Completed
+- ✅ Week 3 Completed
+- 🔄 Week 4 In Progress
 - ## Author
 
 *Kanta Lokeswararao*  
