@@ -146,7 +146,7 @@ Enhance the Apache Superset dashboard by adding executive KPIs, interactive anal
 - Snowflake integration verified.
 - Dashboard finalized for project review.
 
-**Status:** ✅ Week 3 completed successfully.
+**Status:** Week 3 completed successfully.
 
 ---
 
