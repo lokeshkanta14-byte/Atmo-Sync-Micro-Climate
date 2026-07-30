@@ -109,8 +109,50 @@ Apache Superset Dashboard
 
 ---
 
+# Week 3 – Dashboard Enhancement & Analytics
+
+## Objective
+Enhance the Apache Superset dashboard by adding executive KPIs, interactive analytics, advanced visualizations, and dashboard integration.
+
+## Tasks Completed
+- Planned the dashboard layout and analytics.
+- Created executive KPI cards.
+- Developed dashboard charts and visualizations.
+- Integrated the dashboard with Snowflake.
+- Configured dashboard filters and interactions.
+- Validated dashboard performance.
+- Finalized dashboard documentation.
+
+## Executive KPIs
+- Total Containers
+- Average Temperature
+- Average Humidity
+- Average Spoilage Risk
+- High-Risk Containers
+- Immediate Delivery
+- Rerouting Shipment
+
+## Dashboard Charts
+- Temperature & Humidity Trend
+- Product-wise Average Spoilage Risk
+- Travel Distance vs Spoilage Risk
+- Risk Alert Distribution
+- Recommended Action Distribution
+
+## Week 3 Deliverables
+- Dashboard planning completed.
+- KPI cards implemented.
+- Interactive charts developed.
+- Snowflake integration verified.
+- Dashboard finalized for project review.
+
+**Status:** ✅ Week 3 completed successfully.
+
+---
+
 ## Repository Status
 
 - Week 1 – Environment Setup Completed
 - Week 2 – Dashboard Development Completed
-- Ready to continue with Week 3 Advanced Analytics Dashboard.
+- Week 3 – Dashboard Enhancement & Analytics Completed 
+- Ready to continue with Week 4.
