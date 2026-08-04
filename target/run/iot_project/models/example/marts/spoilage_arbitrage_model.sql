@@ -1,4 +1,12 @@
-{{ config(materialized='table') }}
+
+  
+    
+
+create or replace transient table IOT_PROJECT.PUBLIC.spoilage_arbitrage_model
+    
+    
+    
+    as (
 
 SELECT
 
@@ -90,4 +98,9 @@ SELECT
         ELSE 'Low Arbitrage Opportunity'
     END AS ARBITRAGE_OPPORTUNITY
 
-FROM {{ ref('cleaned_iot_data') }}
+FROM IOT_PROJECT.PUBLIC.cleaned_iot_data
+    )
+;
+
+
+  

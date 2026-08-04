@@ -1,4 +1,11 @@
-{{ config(materialized='view') }}
+
+  create or replace   view IOT_PROJECT.PUBLIC.stg_raw_iot_data
+  
+  
+  
+  
+  as (
+    
 
 SELECT
     RECORD_ID,
@@ -42,3 +49,5 @@ SELECT
     ALERT_LEVEL
 
 FROM ATMOSYNC_DB.RAW_DATA.RAW_IOT_DATA
+  );
+

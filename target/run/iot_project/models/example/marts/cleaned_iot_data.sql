@@ -1,9 +1,12 @@
-{{ config(
-    materialized='table',
-    database='ATMOSYNC_DB',
-    schema='RAW_DATA',
-    alias='CLEANED_RAW_IOT_DATA'
-) }}
+
+  
+    
+
+create or replace transient table ATMOSYNC_DB.PUBLIC_RAW_DATA.CLEANED_RAW_IOT_DATA
+    
+    
+    
+    as (
 
 WITH ranked_data AS (
 
@@ -13,7 +16,7 @@ WITH ranked_data AS (
             PARTITION BY RECORD_ID
             ORDER BY RECORD_ID
         ) AS rn
-    FROM {{ ref('stg_raw_iot_data') }}
+    FROM IOT_PROJECT.PUBLIC.stg_raw_iot_data
 
 ),
 
@@ -84,3 +87,8 @@ SELECT
 
 FROM deduplicated d
 CROSS JOIN avg_values a
+    )
+;
+
+
+  

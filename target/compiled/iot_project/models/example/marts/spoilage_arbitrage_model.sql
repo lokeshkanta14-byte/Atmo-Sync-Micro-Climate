@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+
 
 SELECT
 
@@ -90,4 +90,4 @@ SELECT
         ELSE 'Low Arbitrage Opportunity'
     END AS ARBITRAGE_OPPORTUNITY
 
-FROM {{ ref('cleaned_iot_data') }}
+FROM IOT_PROJECT.PUBLIC.cleaned_iot_data

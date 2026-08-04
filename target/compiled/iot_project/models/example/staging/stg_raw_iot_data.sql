@@ -1,4 +1,4 @@
-{{ config(materialized='view') }}
+
 
 SELECT
     RECORD_ID,
