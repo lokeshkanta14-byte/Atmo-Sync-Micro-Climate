@@ -22,5 +22,5 @@ Optimized SQL queries in Snowflake for better analytical performance.
 
 \## Status
 
-Completed.
+Completed. 
 
