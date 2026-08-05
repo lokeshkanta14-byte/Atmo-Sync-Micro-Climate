@@ -61,11 +61,17 @@
 -
 - ### Documentation
 
-- Updated Week 3 progress documentation.
+- Updated Week 4 progress documentation.
 - Documented dashboard development and visualization improvements.
 - Recorded dataset updates and data cleaning activities.
 - Updated the project README with Week 3 progress.
 - Maintained the GitHub repository with the latest changes.
+- ### Final Deliverables
+
+- Final dashboard completed and reviewed.
+- Project documentation finalized.
+- GitHub repository updated with Week 4 progress.
+- Repository prepared for final submission.
 - ## Technologies Used
 
 - Python
