@@ -26,3 +26,21 @@ models:
         tests:
           - unique
           - not_null
+
+
+
+  - name: spoilage_arbitrage_model
+    description: "Analytics model for spoilage arbitrage reporting"
+
+    columns:
+      - name: RECORD_ID
+        description: "Unique identifier for each shipment"
+
+      - name: ARBITRAGE_PROFIT
+        description: "Estimated profit after spoilage loss"
+
+      - name: TRANSPORT_PRIORITY
+        description: "Recommended transport priority"
+
+      - name: ARBITRAGE_OPPORTUNITY
+        description: "Arbitrage opportunity level"
