@@ -20,24 +20,36 @@ SELECT
 
     MARKET_PRICE_PER_KG,
 
+    --Handle missing values for market distance spoilage time
+
     COALESCE(DISTANCE_TO_MARKET,100) AS DISTANCE_TO_MARKET,
     COALESCE(TIME_TO_SPOILAGE_HOURS,48) AS TIME_TO_SPOILAGE_HOURS,
 
+    --Calculate expected revenue
+
     MARKET_PRICE_PER_KG * 100 AS ESTIMATED_REVENUE,
+
+    --Calculate expected loss due to spoilage
 
     (SPOILAGE_RISK / 100) * (MARKET_PRICE_PER_KG * 100)
         AS ESTIMATED_LOSS,
+
+        --Calculate arbitrage profit
 
     (MARKET_PRICE_PER_KG * 100)
     -
     ((SPOILAGE_RISK / 100) * (MARKET_PRICE_PER_KG * 100))
         AS ARBITRAGE_PROFIT,
 
+        --Categorize spoilage risk
+
     CASE
         WHEN SPOILAGE_RISK >= 70 THEN 'High'
         WHEN SPOILAGE_RISK >= 40 THEN 'Medium'
         ELSE 'Low'
     END AS RISK_CATEGORY,
+
+    --Determine shipment profitability
 
     CASE
         WHEN
@@ -50,6 +62,8 @@ SELECT
         ELSE 'Not Profitable'
     END AS PROFIT_STATUS,
 
+    --Assign transport priority
+
     CASE
         WHEN COALESCE(TIME_TO_SPOILAGE_HOURS,48) <= 24
             THEN 'Immediate Sale'
@@ -59,6 +73,8 @@ SELECT
 
         ELSE 'Normal Transport'
     END AS TRANSPORT_PRIORITY,
+
+    --Identify arbitrage opportunity level
 
     CASE
         WHEN COALESCE(TIME_TO_SPOILAGE_HOURS,48) <= 24
