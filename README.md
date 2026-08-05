@@ -43,6 +43,14 @@
 - Suggested dashboard enhancements and design improvements to Shifla.
 - Reviewed dashboard updates and provided constructive feedback.
 - Validated dashboard outputs before sharing with the team
+- ## Week 4 Completed
+
+### Dashboard Improvements
+
+- Enhanced the Superset dashboard based on team feedback.
+- Improved KPIs, charts, filters, and dashboard usability.
+- Refined dashboard visuals for better user experience.
+- Reviewed dashboard performance and fixed identified issues.
 - ### Documentation
 
 - Updated Week 3 progress documentation.
