@@ -58,7 +58,6 @@
 - Verified dashboard outputs before the final presentation.
 - Incorporated team suggestions into the final dashboard.
 - Ensured the dashboard was ready for project demonstration.
--
 - ### Documentation
 
 - Updated Week 4 progress documentation.
@@ -72,6 +71,16 @@
 - Project documentation finalized.
 - GitHub repository updated with Week 4 progress.
 - Repository prepared for final submission.
+- # 🎯 Final Responsibilities Completed
+
+✔️ IoT Dataset Generation
+✔️ Data Cleaning & Validation
+✔️ Dashboard Review & Improvement
+✔️ Dashboard Enhancement Suggestions
+✔️ Review Preparation Support
+✔️ Team Coordination
+✔️ GitHub Documentation
+✔️ Final Project Review Support
 - ## Technologies Used
 
 - Python
