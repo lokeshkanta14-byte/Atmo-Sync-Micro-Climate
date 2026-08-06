@@ -69,7 +69,7 @@ Set up the Apache Superset environment and establish connectivity with the Snowf
 - Dataset imported successfully.
 - Environment prepared for dashboard development.
 
-**Status:** ✅ Week 1 completed successfully.
+**Status:** Week 1 completed successfully.
 
 ---
 
@@ -118,7 +118,7 @@ Apache Superset Dashboard
 - Validated dashboard metrics.
 - Prepared the dashboard for Week 3 enhancements.
 
-**Status:** ✅ Week 2 completed successfully.
+**Status:** Week 2 completed successfully.
 
 ---
 
@@ -159,7 +159,7 @@ Enhance the Apache Superset dashboard by adding executive KPIs, interactive anal
 - Snowflake integration verified.
 - Dashboard prepared for review.
 
-**Status:** ✅ Week 3 completed successfully.
+**Status:** Week 3 completed successfully.
 
 ---
 
@@ -186,7 +186,7 @@ Finalize the Apache Superset dashboard by improving the user interface, validati
 - Dashboard testing completed successfully.
 - Final dashboard documentation completed.
 
-**Status:** ✅ Week 4 completed successfully.
+**Status:** Week 4 completed successfully.
 
 ---
 
