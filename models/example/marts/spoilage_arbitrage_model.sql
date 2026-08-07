@@ -149,3 +149,7 @@ SELECT
     END AS Arbitrage_Opportunity
 
 FROM {{ ref('cleaned_iot_data') }}
+
+ORDER BY
+    SPOILAGE_RISK DESC,
+    ARBITRAGE_PROFIT DESC;
