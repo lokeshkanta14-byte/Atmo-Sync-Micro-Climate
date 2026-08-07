@@ -3,6 +3,13 @@
     tags=['week4','analytics','optimization']
 ) }}
 
+-- ==========================================================
+-- Model Name : spoilage_arbitrage_model
+-- Layer      : Marts
+-- Purpose    : Generate analytics for spoilage arbitrage,
+--              transport priority, and profitability.
+-- ==========================================================
+
 SELECT
     RECORD_ID,
     TIMESTAMP,
