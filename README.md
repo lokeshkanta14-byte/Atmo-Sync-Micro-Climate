@@ -50,3 +50,33 @@ IoT Based Micro Climate Monitoring Project
 - ✅ Risk categorization
 - ✅ Transport priority logic
 - ✅ Arbitrage opportunity logic
+
+## Week 4 Enhancements
+
+### Improvements
+- Configured dbt model tags for analytics.
+- Added SQL documentation comments.
+- Improved SQL readability and maintainability.
+- Added schema documentation.
+- Optimized report ordering.
+
+## Technologies Used
+- dbt Core
+- Snowflake
+- SQL
+- Git
+- GitHub
+
+## dbt Commands
+
+```bash
+dbt debug
+dbt compile
+dbt run
+dbt test
+dbt docs generate
+dbt docs serve
+```
+
+## Outcome
+The project transforms raw IoT shipment data into analytics-ready models for spoilage risk analysis, transport prioritization, and arbitrage opportunity reporting.
